@@ -78,7 +78,7 @@ tr:hover {
 }
 
 #searchInput:focus {
-    border-color: #45a049;
+    border-color: ##b55ba4;
     box-shadow: 0 0 15px rgba(69, 160, 73, 0.6);
     background-color: #fff;
 }
