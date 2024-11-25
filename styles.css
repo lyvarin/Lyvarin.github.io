@@ -140,7 +140,7 @@ footer {
     padding: 10px 20px;
     font-size: 18px;
     color: white;
-    background-color: ##b55ba4;
+    background-color: #722F37;
     border: none;
     border-radius: 25px;
     cursor: pointer;
@@ -149,7 +149,7 @@ footer {
 }
 
 .transfer-button:hover {
-    background-color: ##702963;
+    background-color: #A95C68;
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
     transform: scale(1.05);
 }
