@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English to Lyvarin Dictionary</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function searchDictionary() {
+            let input = document.getElementById('searchInput').value.toLowerCase();
+            let rows = document.querySelectorAll('.dictionary-table tbody tr');
+            rows.forEach(row => {
+                let english = row.cells[0].textContent.toLowerCase();
+                let lyvarin = row.cells[1].textContent.toLowerCase();
+                if (english.includes(input) || lyvarin.includes(input)) {
+                    row.style.display = '';
+                } else {
+                    row.style.display = 'none';
+                }
+            });
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>English to Lyvarin Dictionary</h1>
+        <p>Explore the Lyvarin translations and pronunciations of English words.</p>
+    </header>
+
+    <main>
+        <section class="dictionary">
+            <h2>Dictionary Entries</h2>
+
+            <!-- Search bar -->
+            <input type="text" id="searchInput" onkeyup="searchDictionary()" placeholder="Search for words..." />
+
+            <!-- Greetings -->
+            <h3>Greetings</h3>
+            <table class="dictionary-table">
+                <thead>
+                    <tr>
+                        <th>English</th>
+                        <th>Lyvarin</th>
+                        <th>Pronunciation</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Hello</td>
+                        <td>Iosiea</td>
+                        <td>Ee-oh-see-ay-ah</td>
+                    </tr>
+                    <tr>
+                        <td>Bye</td>
+                        <td>Buirs</td>
+                        <td>Boo-eers</td>
+                    </tr>
+                    <tr>
+                        <td>Farewell</td>
+                        <td>Erah</td>
+                        <td>Eh-rah</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- Nature -->
+            <h3>Nature</h3>
+            <table class="dictionary-table">
+                <thead>
+                    <tr>
+                        <th>English</th>
+                        <th>Lyvarin</th>
+                        <th>Pronunciation</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Water</td>
+                        <td>Arvelin</td>
+                        <td>Ar-veh-lin</td>
+                    </tr>
+                    <tr>
+                        <td>Sky</td>
+                        <td>Serath</td>
+                        <td>Ser-ah-th</td>
+                    </tr>
+                    <tr>
+                        <td>Sun</td>
+                        <td>Silar</td>
+                        <td>See-lar</td>
+                    </tr>
+                    <tr>
+                        <td>Tree</td>
+                        <td>Sylva</td>
+                        <td>Syl-vah</td>
+                    </tr>
+                    <tr>
+                        <td>Earth</td>
+                        <td>Rithil</td>
+                        <td>Rith-il</td>
+                    </tr>
+                    <tr>
+                        <td>Dream</td>
+                        <td>Zelith</td>
+                        <td>Ze-lith</td>
+                    </tr>
+                    <tr>
+                        <td>Rain</td>
+                        <td>Rivor</td>
+                        <td>Ree-vor</td>
+                    </tr>
+                    <tr>
+                        <td>Wind</td>
+                        <td>Aethar</td>
+                        <td>A-thar</td>
+                    </tr>
+                    <tr>
+                        <td>Mountain</td>
+                        <td>Vethal</td>
+                        <td>Veh-thal</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- Emotions & Feelings -->
+            <h3>Emotions & Feelings</h3>
+            <table class="dictionary-table">
+                <thead>
+                    <tr>
+                        <th>English</th>
+                        <th>Lyvarin</th>
+                        <th>Pronunciation</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Smile</td>
+                        <td>Sinthar</td>
+                        <td>Sin-thar</td>
+                    </tr>
+                    <tr>
+                        <td>Love</td>
+                        <td>Rival</td>
+                        <td>Ree-val</td>
+                    </tr>
+                    <tr>
+                        <td>Good</td>
+                        <td>Veyal</td>
+                        <td>Vay-al</td>
+                    </tr>
+                    <tr>
+                        <td>Peaceful</td>
+                        <td>Miri</td>
+                        <td>Meer-ee</td>
+                    </tr>
+                    <tr>
+                        <td>Hope</td>
+                        <td>Varel</td>
+                        <td>Vah-rel</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- Time -->
+            <h3>Time</h3>
+            <table class="dictionary-table">
+                <thead>
+                    <tr>
+                        <th>English</th>
+                        <th>Lyvarin</th>
+                        <th>Pronunciation</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Morning</td>
+                        <td>Viron</td>
+                        <td>Vee-ron</td>
+                    </tr>
+                    <tr>
+                        <td>Evening</td>
+                        <td>Dralin</td>
+                        <td>Dray-lin</td>
+                    </tr>
+                    <tr>
+                        <td>Night</td>
+                        <td>Seryth</td>
+                        <td>Ser-ith</td>
+                    </tr>
+                    <tr>
+                        <td>Time</td>
+                        <td>Vayla</td>
+                        <td>Vah-ya</td>
+                    </tr>
+                    <tr>
+                        <td>Dawn</td>
+                        <td>Serin</td>
+                        <td>Ser-in</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Lyvarin Dictionary. All rights reserved.</p>
+    </footer>
+</body>
+</html>
