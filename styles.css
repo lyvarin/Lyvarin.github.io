@@ -119,3 +119,36 @@ section h3 {
         padding: 8px;
     }
 }
+
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom, #e3fdfd, #ffe6fa);
+    margin: 0;
+    padding: 0;
+    animation: fadeIn 2s ease-in-out;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    animation: slideDown 1s ease-in-out;
+}
+
+h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+h2, h3 {
+    text-align: center;
+    color: #333;
+    margin-top: 20px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+table {
+    width
