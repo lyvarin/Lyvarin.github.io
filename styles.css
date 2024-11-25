@@ -1,14 +1,14 @@
 /* General Styles */
 body {
     font-family: 'Arial', sans-serif;
-    background: linear-gradient(to bottom, #e3fdfd, #ffe6fa);
+    background: linear-gradient(to bottom, #D8BFD8, #E6E6FA);
     margin: 0;
     padding: 0;
     animation: fadeIn 2s ease-in-out;
 }
 
 header {
-    background-color: #4CAF50;
+    background-color: #702963;
     color: white;
     text-align: center;
     padding: 20px 0;
